@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto',sans-serif;
+}
+/* header style */
+.material-icons{
+    color:rgb(96,96,96);
+}
+.header{
+     display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    height:70px;   
+    padding:15px;
+}
+.header_left{
+    display:flex;
+    align-items: center;
+}
+.header_left img{
+    width: 100px;
+    margin-left:15px
+}
+.header i {
+padding:0px 7px;
+cursor:pointer; 
+
+}
+.header_search form {   
+    border: 1px solid #ddd;
+    height: 35px;
+    margin:0;
+    padding: 0;
+    display:flex;
+}
+
+.header_search input{
+    width: 500px;
+    padding:10px;
+    margin:0;
+    border-radius: 0;
+    border:none;
+
+}
+ .header_search button {
+padding:0;
+margin:0;
+height:100%;
+border:none;
+border-radius:0; 
+}
+.mainBody {
+    height: calc(100vh-70px);
+    display:flex;
+    overflow:hidden;
+    
+}
+.sidebar{
+    height:100%;
+   width:230px;
+   background-color:white;
+   overflow-y: hidden; 
+  
+}
+.sidebar_catergories {
+    width:100%;
+    display: flex;
+    flex-direction:column;
+     margin-bottom:15px;
+    margin-top:15px; 
+    
+
+}
+.sidebar_catergory {
+    display:flex;
+    align-items:center;
+    padding:12px 25px;
+}
+.sidebar_catergory span {
+    margin-left:15px;
+
+}
+.sidebar_catergory:hover{
+    background:#e5e5e5;
+    cursor:pointer;
+}
+.sidebar::-webkit-scrollbar{
+    display: none;
+}
+hr{
+    height:1px;
+    background-color:#e5e5e5;
+    border:none;
+} 
+
+.videos_container{
+    background-color: #bd3131;
+    width: 100%;
+    height: 100%;
+    padding:15px 25px;
+    border-top:1px solid #ddd
+    overflow-y: scroll;
+    display:flex;
+    /* flex-direction:column; */
+     
+} 
+.video{
+    min-height: 250px;
+    height:auto;
+
+}
+.thumbnail{
+    width:100%
+    height:150px;
+    object-fit:cover;
+}
+.content{
+width:100%;
+height:100px;
+padding:10px;
+display:flex;
+justify-content:space-between;
+}
+.channel-icon:{
+    width:40px;
+    height:40px;
+    border: radius 50%;
+    object-fit:cover;
+    margin-right:10px;
+}
+.title{
+    width: 100%;
+    height:48px;
+    overflow:hidden;
+
+}
+.channel-name{
+    font-size:14px;
+    margin:2px 0;
+    color: #979797;
+}
